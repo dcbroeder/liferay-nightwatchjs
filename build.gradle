@@ -12,3 +12,8 @@ task nwRunTests(type: Exec) {
 		  workingDir 'tests/nightwatch'
 			commandLine "node_modules/nightwatch/bin/nightwatch", "-e", "firefox,chrome"
 }
+
+task nwRunFirefoxTests(type: Exec) {
+	workingDir 'tests/nightwatch'
+	commandLine "node_modules/nightwatch/bin/nightwatch", "-e", "firefox"
+}

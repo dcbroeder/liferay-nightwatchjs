@@ -1,0 +1,14 @@
+task nwNpmInstall(type: Exec) {
+			  workingDir 'tests/nightwatch'
+				commandLine "npm", "install"
+}
+
+task nwRunTestsHeadless(type: Exec) {
+		  workingDir 'tests/nightwatch'
+			commandLine "node_modules/nightwatch/bin/nightwatch", "-e", "firefox,chrome", "--headless"
+}
+
+task nwRunTests(type: Exec) {
+		  workingDir 'tests/nightwatch'
+			commandLine "node_modules/nightwatch/bin/nightwatch", "-e", "firefox,chrome"
+}

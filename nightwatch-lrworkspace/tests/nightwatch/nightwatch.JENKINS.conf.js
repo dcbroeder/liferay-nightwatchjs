@@ -2,7 +2,7 @@
 module.exports = {
     "unit_tests_mode": true,
     "custom_commands_path": "commands/",
-    "globals_path": "globals.js",
+    "globals_path": "globals.JENKINS.js",
     "src_folders": ["tests/"],
     "output_folder": "reports/",
     "detailed_output": false,
@@ -12,7 +12,7 @@ module.exports = {
            "webdriver": {
                "start_process": true,
             },
-            "launch_url": "http://localhost:8080",
+            "launch_url": "http://docker.for.mac.localhost:8080",
             "silent": true,
             "screenshots": {
               "enabled": true,

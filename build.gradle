@@ -13,7 +13,7 @@ task nwRunTests(type: Exec) {
 			commandLine "node_modules/nightwatch/bin/nightwatch", "-e", "firefox,chrome"
 }
 
-task nwRunFirefoxTests(type: Exec) {
+task nwRunJenkinsTests(type: Exec) {
 	workingDir 'tests/nightwatch'
-	commandLine "node_modules/nightwatch/bin/nightwatch", "-e", "firefox"
+	commandLine "node_modules/nightwatch/bin/nightwatch", , "--config", "nightwatch.JENKINS.conf.js", "-e", "firefox", "--headless"
 }

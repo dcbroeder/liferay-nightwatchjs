@@ -11,7 +11,7 @@ module.exports = {
            "webdriver": {
                "start_process": true,
             },
-            "launch_url": "http://docker.for.mac.localhost:8080",
+            "hostport" : "http://docker.for.mac.host.internal:8080",
             "silent": true,
             "screenshots": {
               "enabled": true,

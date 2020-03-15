@@ -4,7 +4,7 @@ module.exports = {
       "yearApp":"/group/guest/privada1"
   },
   "server" : {
-    "hostport" : "http://docker.for.mac.localhost:8080"
+    "hostport" : "http://docker.for.mac.host.internal:8080"
   },
   "users" : {
       "admin" : {

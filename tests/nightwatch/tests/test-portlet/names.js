@@ -10,7 +10,7 @@ module.exports = {
         .click('input[type="submit"]')
         .waitForElementVisible(".user-greeting");
 
-      browser.expect.element(".user-greeting").text.to.equal("Greetings, "+browser.globals.mocks.firstName+" "+browser.globals.mocks.lastName+"!");
+      browser.expect.element(".user-greeting").text.to.contain("Greetings, "+browser.globals.mocks.firstName+" "+browser.globals.mocks.lastName+"!");
       browser.expect.element(".user-greeting-date").text.to.contain(currentYear);
 
       browser.liferayLogout(browser.globals.server.hostport)

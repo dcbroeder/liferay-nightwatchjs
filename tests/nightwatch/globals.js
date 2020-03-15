@@ -1,4 +1,8 @@
 module.exports = {
+  "urls" : {
+      "home" : "/",
+      "yearApp":"/group/guest/privada1"
+  },
   "server" : {
     "hostport" : "http://localhost:8080"
   },
@@ -6,11 +10,6 @@ module.exports = {
       "admin" : {
           "email": 'test@liferay.com',
           "password": 'test',
-      }
-  },
-  "modules" : {
-      "yearApp" : {
-          "url" : "/group/guest/privada1"
       }
   },
   "mocks": {

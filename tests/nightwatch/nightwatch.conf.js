@@ -1,6 +1,5 @@
 // EXPORTS
 module.exports = {
-    "unit_tests_mode": false,
     "custom_commands_path": "commands/",
     "globals_path": "globals.js",
     "src_folders": ["tests/"],

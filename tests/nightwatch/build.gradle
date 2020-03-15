@@ -4,7 +4,7 @@ plugins {
 
 task nwRunJenkinsTests(type: NodeTask) {
     script = file('node_modules/nightwatch/bin/nightwatch')
-    args = ["--config", "nightwatch.JENKINS.conf.js", "-e", "firefox", "--headless"]
+    args = ["--config", "nightwatch.JENKINS.conf.js", "-e", "firefox,chrome", "--headless"]
 }
 
 task nwRunTests(type: NodeTask) {

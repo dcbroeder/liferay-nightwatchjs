@@ -25,7 +25,13 @@ module.exports = {
               "port": 9515
           },
           "desiredCapabilities": {
-             "browserName" : 'chrome'
+             "browserName" : 'chrome',
+             "javascriptEnabled" : true,
+             "acceptSslCerts" : true,
+             // DOCKER :
+             "chromeOptions" : {
+                 "args" : ["--no-sandbox"]
+             }
           }
         },
         "firefox": {
